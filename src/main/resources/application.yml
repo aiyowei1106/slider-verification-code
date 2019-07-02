@@ -1,0 +1,11 @@
+spring:
+  jackson:
+#    date-format: java.text.SimpleDateFormat
+    default-property-inclusion: non_null
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+logging:
+  path: /Volumes/D盘/hanne_blog/log/sliderVerificationCodeLog
+  file:
+    max-size: 30MB
+  level: {"top.wmjgm":"trace"}
+  pattern: ${CONSOLE_LOG_PATTERN:-%clr(%d{HH:mm:ss.SSS}){magenta} %clr(${LOG_LEVEL_PATTERN:-%5p})
